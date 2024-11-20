@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make My Home</title>
+    <!--General-->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!--Uudai-->
+    <link rel="stylesheet" href="../assets/css/uudai.css" />
+    <!--Sản phẩm-->
+    <link rel="stylesheet" href="../assets/css/sanpham.css" />
+    <!--Boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--Fontawsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="loading"></div>
+    <div class="offline-message" id="offline-message"></div>
+    <div class="content-show">
+      <!--Header-->
+      <header></header>
+
+      <!-- Ưu đãi -->
+      <div class="Gift-voucher-container">
+        <img src="../assets/images/image/uudai/VOUCHER01-01.jpg">
+        <img src="../assets/images/image/uudai/VOUCHER2-01.jpg">
+      </div>
+      <div class="Flex_container_uudai">
+        <div class="content_flex_uudai_left">MỪNG LỄ ĐỘC LẬP SALE OFF 50%</div>
+        <div class="content_flex_uudai_right">
+          <div
+            id="carouselExampleControls3"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="0">
+                <div class="Flex_container_carousel_uudai">
+                  <a href="./ghe_detail.html" class="product-card">
+                    <div class="product-image">
+                      <img
+                        src="../assets/images/image/sanpham/sanpham-candles.jpg"
+                        alt="Product Image"
+                        class="original-image"
+                      />
+                      <img
+                        src="../assets/images/image/sanpham/Sản phẩm - blossom candles 2.jpg"
+                        alt="Detail Image"
+                        class="hover-image"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <i
+                        class="fa-solid fa-cart-plus fa-2xl"
+                        id="add-cart"
+                        onclick="addItem(event)"
+                      ></i>
+                      <h2>CANBLOSS</h2>
+                      <p>Nến thơm hương đào</p>
+                      <div class="price">
+                        <span class="discount-price">510,000</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="./ghe_detail.html" class="product-card">
+                    <div class="product-image">
+                      <img
+                        src="../assets/images/image/sanpham/sanoham-quacau.jpg"
+                        alt="Product Image"
+                        class="original-image"
+                      />
+                      <img
+                        src="../assets/images/image/sanpham/sản phẩm - quả cầu 2.jpg"
+                        alt="Detail Image"
+                        class="hover-image"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <i
+                        class="fa-solid fa-cart-plus fa-2xl"
+                        id="add-cart"
+                        onclick="addItem(event)"
+                      ></i>
+                      <h2>ROSESPHERE</h2>
+                      <p>Quả cầu thạch anh hồng</p>
+                      <div class="price">
+                        <span class="discount-price">730,000</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="./ghe_detail.html" class="product-card">
+                    <div class="product-image">
+                      <img
+                        src="../assets/images/image/sanpham/sanpham-Azathoth-Tarot.jpg"
+                        alt="Product Image"
+                        class="original-image"
+                      />
+                      <img
+                        src="../assets/images/image/sanpham/sản phẩm  - azathoth 2.jpg"
+                        alt="Detail Image"
+                        class="hover-image"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <i
+                        class="fa-solid fa-cart-plus fa-2xl"
+                        id="add-cart"
+                        onclick="addItem(event)"
+                      ></i>
+                      <h2>AZATHOTH</h2>
+                      <p>Bài Tarot, 8.5x12.5 cm</p>
+                      <div class="price">
+                        <span class="discount-price">899,000</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="0">
+                <div class="Flex_container_carousel_uudai">
+                  <a href="./ghe_detail.html" class="product-card">
+                    <span class="discount-tag">10</span>
+                    <div class="product-image">
+                      <img
+                        src="../assets/images/image/sanpham/sanpham-witchesoracle.jpg"
+                        alt="Product Image"
+                        class="original-image"
+                      />
+                      <img
+                        src="../assets/images/image/sanpham/Sản phẩm - witches 2.jpg"
+                        alt="Detail Image"
+                        class="hover-image"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <i
+                        class="fa-solid fa-cart-plus fa-2xl"
+                        id="add-cart"
+                        onclick="addItem(event)"
+                      ></i>
+                      <h2>WITCHES</h2>
+                      <p>Bài Oracle, 8x13 cm</p>
+                      <div class="price">
+                        <span class="discount-price">850,000</span>
+                        <span class="original-price">950,000</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="./ghe_detail.html" class="product-card">
+                    <div class="product-image">
+                      <img
+                        src="../assets/images/image/sanpham/Sản phẩm - Heart quartz.jpg"
+                        alt="Product Image"
+                        class="original-image"
+                      />
+                      <img
+                        src="../assets/images/image/sanpham/sản phẩm - heart 2.jpg"
+                        alt="Detail Image"
+                        class="hover-image"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <i
+                        class="fa-solid fa-cart-plus fa-2xl"
+                        id="add-cart"
+                        onclick="addItem(event)"
+                      ></i>
+                      <h2>Heart quartz</h2>
+                      <p>Đá thạch anh hồng</p>
+                      <div class="price">
+                        <span class="discount-price">3,500,000</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="./ghe_detail.html" class="product-card">
+                    <div class="product-image">
+                      <img
+                        src="../assets/images/image/sanpham/Sản phẩm - Túi Tarot cute.jpg"
+                        alt="Product Image"
+                        class="original-image"
+                      />
+                      <img
+                        src="../assets/images/image/sanpham/sản phẩm - túi tarot 2.jpg"
+                        alt="Detail Image"
+                        class="hover-image"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <i
+                        class="fa-solid fa-cart-plus fa-2xl"
+                        id="add-cart"
+                        onclick="addItem(event)"
+                      ></i>
+                      <h2>Túi cute</h2>
+                      <p>Túi Tarot, 20x30 cm</p>
+                      <div class="price">
+                        <span class="discount-price">850,000</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="0">
+                <div class="Flex_container_carousel_uudai">
+                  <a href="./ghe_detail.html" class="product-card">
+                    <div class="product-image">
+                      <img
+                        src="../assets/images/image/sanpham/sản phẩm - bloss hộp gỗ.jpg"
+                        alt="Product Image"
+                        class="original-image"
+                      />
+                      <img
+                        src="../assets/images/image/sanpham/sản phẩm- bloss hộp gỗ 2.jpg"
+                        alt="Detail Image"
+                        class="hover-image"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <i
+                        class="fa-solid fa-cart-plus fa-2xl"
+                        id="add-cart"
+                        onclick="addItem(event)"
+                      ></i>
+                      <h2>Hộp gỗ BLOSS</h2>
+                      <p>Hộp gỗ, 25x10 cm</p>
+                      <div class="price">
+                        <span class="discount-price">990,000</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="./ghe_detail.html" class="product-card">
+                    <div class="product-image">
+                      <img
+                        src="../assets/images/image/sanpham/sản phẩm - bloss dây chuyền 2.jpg"
+                        alt="Product Image"
+                        class="original-image"
+                      />
+                      <img
+                        src="../assets/images/image/sanpham/sản phẩm - bloss dây chuyền.jpg"
+                        alt="Detail Image"
+                        class="hover-image"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <i
+                        class="fa-solid fa-cart-plus fa-2xl"
+                        id="add-cart"
+                        onclick="addItem(event)"
+                      ></i>
+                      <h2>Dây BLOSS</h2>
+                      <p>Mặt dây chuyền đá</p>
+                      <div class="price">
+                        <span class="discount-price">3,460,000</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="./ghe_detail.html" class="product-card">
+                    <div class="product-image">
+                      <img
+                        src="../assets/images/image/sanpham/sản phẩm - bloss sách.jpg"
+                        alt="Product Image"
+                        class="original-image"
+                      />
+                      <img
+                        src="../assets/images/image/sanpham/sản phẩm - bloss sách2.jpg"
+                        alt="Detail Image"
+                        class="hover-image"
+                      />
+                    </div>
+                    <div class="product-details">
+                      <i
+                        class="fa-solid fa-cart-plus fa-2xl"
+                        id="add-cart"
+                        onclick="addItem(event)"
+                      ></i>
+                      <h2>Bìa BLOSS</h2>
+                      <p>Bìa sách cứng, 50x20 cm</p>
+                      <div class="price">
+                        <span class="discount-price">650,000</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls3"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls3"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="uudai_title">XEM NGAY</div>
+      <div id="XemNgay" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="0">
+            <div class="Flex_container_carousel_uudai">
+              <a href="./ghe_detail.html" class="product-card">
+                <div class="product-image">
+                  <img
+                    src="../assets/images/image/sanpham/Sản phẩm - Đá hoa đào.jpg"
+                    alt="Product Image"
+                    class="original-image"
+                  />
+                  <img
+                    src="../assets/images/image/sanpham/sản phẩm - đá hoa đào 2.jpg"
+                    alt="Detail Image"
+                    class="hover-image"
+                  />
+                  <div class="soldout">Bán hết</div>
+                </div>
+                <div class="product-details">
+                  <i
+                    class="fa-solid fa-cart-plus fa-2xl"
+                    id="add-cart"
+                    onclick="addItem(event)"
+                  ></i>
+                  <h2>Đá BLOSS</h2>
+                  <p>Đá thanh tẩy, cỡ vừa</p>
+                  <div class="price">
+                    <span class="discount-price">180,000</span>
+                  </div>
+                </div>
+              </a>
+              <a href="./ghe_detail.html" class="product-card">
+                <div class="product-image">
+                  <img
+                    src="../assets/images/image/sanpham/sanpham-candles.jpg"
+                    alt="Product Image"
+                    class="original-image"
+                  />
+                  <img
+                    src="../assets/images/image/sanpham/Sản phẩm - blossom candles 2.jpg"
+                    alt="Detail Image"
+                    class="hover-image"
+                  />
+                </div>
+                <div class="product-details">
+                  <i
+                    class="fa-solid fa-cart-plus fa-2xl"
+                    id="add-cart"
+                    onclick="addItem(event)"
+                  ></i>
+                  <h2>CANBLOSS</h2>
+                  <p>Nến thơm hương đào</p>
+                  <div class="price">
+                    <span class="discount-price">510,000</span>
+                  </div>
+                </div>
+              </a>
+              <a href="./ghe_detail.html" class="product-card">
+                <div class="product-image">
+                  <img
+                    src="../assets/images/image/sanpham/Sản phẩm - Blossom Lenormand.jpg"
+                    alt="Product Image"
+                    class="original-image"
+                  />
+                  <img
+                    src="../assets/images/image/sanpham/sản phẩm - Sweet Blossom Lenormand deck.jpg"
+                    alt="Detail Image"
+                    class="hover-image"
+                  />
+                </div>
+                <div class="product-details">
+                  <i
+                    class="fa-solid fa-cart-plus fa-2xl"
+                    id="add-cart"
+                    onclick="addItem(event)"
+                  ></i>
+                  <h2>BLOSSLENO</h2>
+                  <p>Bài Lenormand, 8x12 cm</p>
+                  <div class="price">
+                    <span class="discount-price">1,220,000</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="0">
+            <div class="Flex_container_carousel_uudai">
+              <a href="./ghe_detail.html" class="product-card">
+                <div class="product-image">
+                  <img
+                    src="../assets/images/image/sanpham/Bài tarot - Lunatic.jpg"
+                    alt="Product Image"
+                    class="original-image"
+                  />
+                  <img
+                    src="../assets/images/image/sanpham/sản phẩm - lunatic 2.jpg"
+                    alt="Detail Image"
+                    class="hover-image"
+                  />
+                </div>
+                <div class="product-details">
+                  <i
+                    class="fa-solid fa-cart-plus fa-2xl"
+                    id="add-cart"
+                    onclick="addItem(event)"
+                  ></i>
+                  <h2>LUNATIC</h2>
+                  <p>Bài Tarot, 8x13 cm</p>
+                  <div class="price">
+                    <span class="discount-price">1,300,000</span>
+                  </div>
+                </div>
+              </a>
+              <a href="./ghe_detail.html" class="product-card">
+                <div class="product-image">
+                  <img
+                    src="../assets/images/image/sanpham/Sản phẩm- sản phẩm bán chạy - nến.jpg"
+                    alt="Product Image"
+                    class="original-image"
+                  />
+                  <img
+                    src="../assets/images/image/sanpham/sản phẩm - nến spell 2.jpg"
+                    alt="Detail Image"
+                    class="hover-image"
+                  />
+                </div>
+                <div class="product-details">
+                  <i
+                    class="fa-solid fa-cart-plus fa-2xl"
+                    id="add-cart"
+                    onclick="addItem(event)"
+                  ></i>
+                  <h2>SPELLCAND</h2>
+                  <p>Nến thơm, 200ml</p>
+                  <div class="price">
+                    <span class="discount-price">610,000</span>
+                  </div>
+                </div>
+              </a>
+              <a href="./ghe_detail.html" class="product-card">
+                <div class="product-image">
+                  <img
+                    src="../assets/images/image/sanpham/Sản phẩm - Đá thanh tẩy.jpg"
+                    alt="Product Image"
+                    class="original-image"
+                  />
+                  <img
+                    src="../assets/images/image/sanpham/sản phẩm - lọ đá vụn.jpg"
+                    alt="Detail Image"
+                    class="hover-image"
+                  />
+                </div>
+                <div class="product-details">
+                  <i
+                    class="fa-solid fa-cart-plus fa-2xl"
+                    id="add-cart"
+                    onclick="addItem(event)"
+                  ></i>
+                  <h2>LỌ ĐÁ</h2>
+                  <p>Đá năng lượng, vụn</p>
+                  <div class="price">
+                    <span class="discount-price">160,000</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#XemNgay"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#XemNgay"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--Footer-->
+      <footer></footer>
+    </div>
+    <script src="../assets/js/loading&connect.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/tintuc.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/header&footer.js"></script>
+    <script src="../assets/js/slideshow.js"></script>
+  </body>
+</html>

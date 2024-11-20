@@ -1,0 +1,31 @@
+:root {
+  --title-color: #000000;
+  --detail-color: #424040;
+  --highlight-color: #D4BEE4;
+  --navbar-color: #D4BEE4;
+  --navbar-menu-color: rgba(81, 27, 119, 0.7);
+}
+* {
+  font-family: 'Segoe UI', Tahoma;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  letter-spacing: 0.25px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+p,
+b,
+li,
+a {
+  font-size: 16px;
+}

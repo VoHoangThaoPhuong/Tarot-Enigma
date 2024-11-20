@@ -1,0 +1,204 @@
+<div class="header_top">
+  <a href="./LandingPage.html">
+    <img src="../assets/images/Giới thiệu/logotarot-01.png" alt="Loianh"/ class="logo">
+  </a>
+  <div class="header_right">
+    <div class="header_right_search">
+      <div>
+        <i class="fa-solid fa-magnifying-glass fa_xl search_icon"></i>
+      </div>
+      <input
+        class="hidden_input"
+        type="text"
+        placeholder="Tìm kiếm sản phẩm..."
+      />
+    </div>
+    <div class="header_right_icon">
+      <a id="user">
+        <i class="fa-regular fa-user fa-sm" onclick="showPopup()"></i>
+        <p id="username_show"></p>
+      </a>
+      <a
+        ><i class="fa-solid fa-bag-shopping fa-sm" id="cart_show"></i>
+        <span id="cart-count">0</span></a
+      >
+    </div>
+  </div>
+</div>
+<nav class="navbar">
+  <ul>
+    <li class="active">
+      <a href="./GioiThieu.html" class="marked">GIỚI THIỆU</a>
+    </li>
+    <li>
+      <a href="./sanpham.html" class="marked">SẢN PHẨM</a>
+      <div class="bg_menu_1">
+        <div class="menu_1">
+          <ul>
+            <li><a href="./sanpham_tarot.html">Bài Tarot</a></li>
+            <li><a href="./sanpham_tarot.html">Bài Oracle</a></li>
+            <li><a href="./sanpham_tarot.html">Bài Lenormand</a></li>
+            <li>
+              <a href="./sanpham_tarot.html">Bài I Ching</a>
+            </li>
+            <li><a href="./sanpham_tarot.html">Bài Tây</a></li>
+            <li><a href="./sanpham_tarot.html">Đá thanh tẩy</a></li>
+          </ul>
+          <ul>
+            <li><a href="./sanpham_tarot.html">Hộp gỗ</a></li>
+            <li><a href="./sanpham_tarot.html">Con lắc cảm xạ</a></li>
+            <li>
+              <a href="./sanpham_tarot.html">Khăn trải</a>
+            </li>
+            <li><a href="./sanpham_tarot.html">Túi Tarot</a></li>
+            <li>
+              <a href="./sanpham_tarot.html">Phụ kiện khác</a>
+            </li>
+            <li><a href="./sanpham_tarot.html">Sách tham khảo</a></li>
+          </ul>
+          <img
+            src="../assets/images/Sản phẩm/4 - Azathoth 1.jpg"
+            alt=""
+            style="
+              width: 30vw;
+              height: 40vh;
+              margin-bottom: 2%;
+              margin-left: 10%;
+            "
+          />
+        </div>
+      </div>
+    </li>
+    <li>
+      <a href=".Interior_Website-main\template\TinTuc.html" class="marked">TIN TỨC</a>
+    </li>
+    <li>
+      <a href="./thietkethicong.html" class="marked">BOOKING</a>
+    </li>
+    <li>
+      <a href="uudai.html" class="marked">ƯU ĐÃI</a>
+      <div class="menu_3">
+        <ul>
+          <li>
+            <img src="../assets/images/Ưu đãi/VOUCHER01-01.jpg" alt="Loianh" style="width: 40vw; padding: 20px 150px">
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+<div id="loginPopup" class="loginpopup" onclick="closeLoginPopUp(event)">
+  <div class="flip-container">
+    <div class="flipper" id="flipper">
+      <div class="front">
+        <div class="login-container" id="login-container">
+          <div class="form-container sign-up-container">
+            <form action="#">
+              <h1>Tạo tài khoản</h1>
+              <div class="social-container">
+                <a href="#" class="social fb">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social gg">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a href="#" class="social linked">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+              <span>hoặc bạn có thể đăng ký bằng Email</span>
+              <input
+                type="text"
+                placeholder="Tên đăng nhập"
+                id="username-signup"
+              />
+              <input type="email" placeholder="Email" id="email-signup" />
+              <input
+                type="password"
+                placeholder="Mật khẩu"
+                id="password-signup"
+              />
+              <button onclick="signup()">Đăng ký</button>
+            </form>
+          </div>
+          <div class="form-container sign-in-container">
+            <form action="#">
+              <h1>Đăng nhập</h1>
+              <div class="social-container">
+                <a href="#" class="social fb">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social gg">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a href="#" class="social linked">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+              <span>hoặc đăng nhập bằng cách sau</span>
+              <input type="text" placeholder="Tên đăng nhập" id="username" />
+              <input type="password" placeholder="Mật khẩu" id="password" />
+              <div onclick="flip()" style="margin-bottom: 10px" id="flip-btn">
+                Quên mật khẩu !?
+              </div>
+              <button onclick="signin()">Đăng nhập</button>
+            </form>
+          </div>
+          <div class="overlay-container">
+            <div class="overlay">
+              <div class="overlay-panel overlay-left">
+                <h1 class="highlight">Chào bạn mới!</h1>
+                <p class="highlight">
+                  Hãy đăng ký để trải nghiệm dịch vụ một cách tốt nhất
+                </p>
+                <button class="ghost" id="signIn" onclick="changeSignUp()">
+                  Đăng nhập
+                </button>
+              </div>
+              <div class="overlay-panel overlay-right">
+                <h1 class="highlight">Chào bạn!</h1>
+                <p class="highlight">
+                  Đăng nhập để cùng trải nghiệm những dịch vụ tuyệt vời nhất
+                </p>
+                <button class="ghost" id="signUp" onclick="changeSignIn()">
+                  Đăng ký
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="back">
+        <div class="login-container" id="forgot-container">
+          <form action="#" id="forgot-form">
+            <h1>Vui lòng nhập Email của bạn:</h1>
+            <input type="email" placeholder="Email" />
+            <div onclick="flip()" style="margin-bottom: 10px" id="flip-btn">
+              <i class="fa-solid fa-arrow-left"></i>
+              Quay về đăng nhập
+            </div>
+            <button onclick="sendEmail()">Gửi</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="cart-dropdown" class="cart-dropdown">
+  <ul id="cart-items"></ul>
+  <div id="cart-total">Total: $0.00</div>
+  <button id="Checkout">
+    <a href="./thanhtoan.html" onclick="Thanhtoan(event)">Thanh toán</a>
+  </button>
+</div>
+
+<div id="userPopup" class="userPopup" onclick="closeUserPopUp(event)">
+  <div id="user-popup-container">
+    <p><a href="./user-info.html">Thông tin cá nhân</a></p>
+    <p>Lịch sử đơn hàng</p>
+    <hr />
+    <p id="logout" onclick="logout()">Đăng xuất</p>
+  </div>
+</div>
