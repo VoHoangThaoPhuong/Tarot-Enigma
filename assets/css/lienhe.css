@@ -11,14 +11,14 @@
   top: 4.5vw;
   left: -2vw;
   width: 20%;
-  color: yellow;
+  color: #D4BEE4;
 }
 .lienhe_header .content {
   width: 100vw;
   padding: 5%;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(250, 235, 215, 0.2);
+  background-color: #D4BEE4;
 }
 .lienhe_header .content_1 {
   padding-right: 8%;
@@ -47,7 +47,7 @@
   color: white;
 }
 .lienhe_header .content_1 button:hover {
-  background-color: rgb(168, 168, 143);
+  background-color: #D4BEE4;
 }
 .lienhe_header .content h2 {
   font-size: 30px;

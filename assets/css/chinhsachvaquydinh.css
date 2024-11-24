@@ -11,12 +11,12 @@
   top: 4.5vw;
   left: -2vw;
   width: 20%;
-  color: yellow;
+  color:D4BEE4;
 }
 .chinhsach_header .content {
   width: 100vw;
   padding: 5%;
-  background-color: rgba(250, 235, 215, 0.2);
+  background-color: #D4BEE4;
 }
 .chinhsach_header .content ol li {
   font-weight: 600;
