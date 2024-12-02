@@ -107,3 +107,9 @@
 .extra-content {
   display: none;
 }
+
+.gioithieu_header h1 {
+  position: relative;
+  font-size: 50px;
+  font-weight: 600;
+}
