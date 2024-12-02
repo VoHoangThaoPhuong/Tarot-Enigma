@@ -5,20 +5,26 @@
   --navbar-color: #D4BEE4;
   --navbar-menu-color: rgba(81, 27, 119, 0.7);
 }
-/* @font-face {
-  font-family: 'CustomFont';
+@font-face {
+  font-family: 'CustomFont1';
   src: url('../fonts/CormorantInfant-Regular.ttf') format('truetype'); 
   font-weight: normal;
   font-style: normal;
-} */
+}
 @font-face {
-  font-family: 'CustomFont';
+  font-family: 'CustomFont2';
   src: url('../fonts/CormorantSC-Regular.ttf') format('truetype'); 
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'CustomFont3';
+  src: url('../fonts/CormorantUpright-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
 * {
-  font-family: 'CormorantSC-Regular';
+  font-family: 'CustomFont1';
   margin: 0;
   padding: 0;
   font-size: 13px;
