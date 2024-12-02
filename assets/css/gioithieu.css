@@ -73,7 +73,7 @@
 .cotloi_body .item h1,
 .cotloi_body .item p {
   color: var(--title-color);
-  font-size: 16px;
+  font-size: 17px;
   margin-bottom: 5%;
 }
 .gioithieu_body .item img {
@@ -129,7 +129,7 @@
 .location .content b,
 .location .content li {
   text-align: justify;
-  font-size: 16px;
+  font-size: 17px;
 }
 .location h1 {
   margin: 1%;
