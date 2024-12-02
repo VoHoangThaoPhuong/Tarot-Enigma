@@ -5,8 +5,20 @@
   --navbar-color: #D4BEE4;
   --navbar-menu-color: rgba(81, 27, 119, 0.7);
 }
+/* @font-face {
+  font-family: 'CustomFont';
+  src: url('../fonts/CormorantInfant-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+} */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../fonts/CormorantSC-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
 * {
-  font-family: 'Segoe UI', Tahoma;
+  font-family: 'CormorantSC-Regular';
   margin: 0;
   padding: 0;
   font-size: 13px;
