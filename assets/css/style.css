@@ -4,6 +4,9 @@
   --highlight-color: #D4BEE4;
   --navbar-color: #D4BEE4;
   --navbar-menu-color: rgba(81, 27, 119, 0.7);
+  --origin1-color:rgba(81, 27, 119, 1);
+  --origin2-color:#9B7EBD;
+  --origin3-color:#D4BEE4;
 }
 @font-face {
   font-family: 'CustomFont1';
