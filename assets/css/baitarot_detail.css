@@ -93,7 +93,8 @@
   top:3vw;
 }
 .detail-btn:hover {
-  background-color: var(--detail-color);
+  background-color: var(--origin2-color);
+  color: black;
 }
 .filter {
   overflow: hidden;
@@ -138,11 +139,20 @@
 }
 .review {
   display: grid;
-  grid-template-columns: 1fr 15fr;
+  grid-template-columns: 1fr 19fr;
   gap: 10px;
   font-size: 17px;
 }
 .review img {
   width: 50px;
   height: auto;
+  border-radius: 500px;
 }
+.review-tag {
+  margin-top: 11px;
+  margin-top: 11px;
+}
+.line {
+  border: 1px solid black;
+}
+
