@@ -26,22 +26,17 @@
   <body>
     <div class="flex-container">
       <div class="left-container">
-        <a href="./LandingPage.html"><h1>Make My Home</h1></a>
-        <p id="direction">
-          <span id="blue">Giỏ hàng</span>&nbsp;&nbsp;<span id="cursor">></span
-          >&nbsp;&nbsp;Thông tin giao hàng
-        </p>
+        <a href="./GioiThieu.html"><h1>Tarot Enigma</h1></a>
         <h2>Thông tin giao hàng</h2>
         <p id="already">
           Bạn đã có tài khoản?
           <a href="#" id="sign-in-ref">Đăng nhập</a>
         </p>
-        <input type="text" id="name" placeholder="Họ và Tên" />
+        <input type="text" id="name" placeholder="Họ và Tên">
         <div id="e-p-container">
-          <input type="text" id="email" placeholder="Email" />
-          <input type="text" id="phone" placeholder="Số điện thoại" />
+          <input type="text" id="email" placeholder="Email">
+          <input type="text" id="phone" placeholder="Số điện thoại">
         </div>
-        <input type="text" id="address" placeholder="Địa chỉ" />
         <div id="selector-container">
           <select>
             <option disabled selected hidden>Thành phố</option>
@@ -51,68 +46,67 @@
           </select>
           <select>
             <option disabled selected hidden>Quận</option>
-            <option>Gò Vấp</option>
-            <option>Phú Nhuận</option>
-            <option>Quận 1</option>
-            <option>Quận 2</option>
+            <option>Ngũ Hành Sơn</option>
+            <option>Sơn Trà</option>
+            <option>Cẩm Lệ</option>
+            <option>Hòa Vang</option>
           </select>
           <select>
             <option disabled selected hidden>Phường</option>
-            <option>Phường 1</option>
-            <option>Phường 2</option>
-            <option>Phường 3</option>
-            <option>Phường 4</option>
-            <option>Phường 5</option>
-            <option>Phường 6</option>
+            <option>Hòa Quý</option>
+            <option>Mỹ An</option>
+            <option>Hòa Hải</option>
+            <option>Khuê Mỹ</option>
           </select>
+          <input type="text" id="address" placeholder="Địa chỉ">
         </div>
         <h2>Phương thức giao hàng</h2>
         <!-- Nhận hàng -->
         <div class="radio-border">
           <input type="radio" id="toanquoc" name="shipping-method" checked />
-          <label for="toanquoc"
-            >TOÀN QUỐC - ViettelPost giao hàng tận nơi (có phí)</label
-          >
+          <label for="toanquoc">
+            TOÀN QUỐC - ViettelPost giao hàng tận nơi (có phí)
+          </label>
         </div>
         <div class="radio-border">
           <input type="radio" id="hcm" name="shipping-method" />
-          <label for="hcm">HCM - MakeMyHome giao hàng tận nơi (Có phí)</label>
+          <label for="hcm">
+            HCM - Tarot Enigma giao hàng tận nơi (Có phí)
+          </label>
         </div>
         <div class="radio-border">
           <input type="radio" id="atstore" name="shipping-method" />
-          <label for="atstore">Tôi sẽ đến nhận tại cửa hàng</label>
+          <label for="atstore">
+            Tôi sẽ đến nhận tại cửa hàng
+          </label>
         </div>
         <h2>Phương thức thanh toán</h2>
         <!-- Thanh toán -->
         <div class="radio-border2">
           <input type="radio" id="cod" name="payment-method" checked />
-          <label for="cod"
-            ><img src="../assets/images/thanhtoan/cod.svg" />Thanh toán khi giao
-            hàng (COD) - Chỉ áp dụng khu vực nội thành HCM</label
-          >
+          <label for="cod">
+            <img src="../assets/images/Thanh toán/Thanh toán bằng Momo.png"  alt="Loi anh" class>
+            Thanh toán qua Momo
+          </label>
         </div>
-        <!-- Xử lý javascript -->
-        <p id="cod-description">
-          Chỉ áp dụng khu vực Nội thành HCM (cách kho hàng <20km) do Make My
-          Home trực tiếp giao hàng và lắp đặt. Make My Home sẽ quyết định cuối
-          cùng về hình thức giao hàng và COD cho khách hàng.
-        </p>
-        <!-- ---- -->
         <div class="radio-border2">
           <input type="radio" id="online" name="payment-method" />
-          <label for="online"
-            ><img src="../assets/images/thanhtoan/nganluong.svg" />Thanh toán
-            online</label
-          >
+          <label for="online">
+            <img src="../assets/images/Thanh toán/Thanh toán bằng ngân hàng.jpg"  alt="Loi anh">
+            Thanh toán qua tài khoản ngân hàng
+          </label>
         </div>
-        <!-- Chuyển trang -->
-        <div id="flex-navigator">
-          <a href="#" id="cart-ref">Giỏ hàng</a>
-          <a id="button-ref" onclick="payment()">Thanh toán</a>
+        <div class="radio-border2">
+          <input type="radio" id="cod" name="payment-method" checked />
+          <label for="cod">
+            <img src="../assets/images/Thanh toán/Thanh toán Cod.jpg" alt="Loi anh">
+            Thanh toán khi giao hàng (COD)
+          </label>
         </div>
       </div>
       <!-- Bên phải -->
       <div class="right-container">
+        <h2>Sản phẩm đã thêm vào giỏ hàng</h2>
         <ul id="cart-items"></ul>
         <hr />
         <div id="discount-container">
@@ -139,6 +133,8 @@
             <span id="final-price"></span>
           </p>
         </div>
+        <!-- Chuyển trang -->
+        <a id="button-ref" onclick="payment()">Thanh toán</a>
       </div>
     </div>
   </body>
