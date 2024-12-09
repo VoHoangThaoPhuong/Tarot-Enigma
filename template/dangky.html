@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../assets/css/header.css" />
     <!--DangNhap-->
     <link rel="stylesheet" href="../assets/css/dangnhap.css" />
+    <!--DangKy-->
+    <link rel="stylesheet" href="../assets/css/dangky.css" />
     <!--SlideBar-->
     <link rel="stylesheet" href="../assets/css/slidebar.css" />
     <!--Footer-->
@@ -238,28 +240,42 @@
       </div>      
     </header>
 
-    <!--Dang Nhap-->
-    <div class="FormDangNhap">
-      <div class="DangNhap_Header">
-        <h1>Đăng nhập</h1>
-      </div>
-      <form id="login-form">
-        <div id="error-message"></div>
-        <div class="input-group">
-          <p id="email-label">Email<span style="color:red">*</span></label><br>
-          <input type="email" id="email" name="email" required>
+    <!--Dang Ky-->
+    <div class="register-form">
+        <div class="register-header">
+            <h1>ĐĂNG KÝ</h1>
         </div>
-        <div class="input-group">
-          <p id="password-label">Mật khẩu<span style="color:red">*</span></label><br>
-          <input type="password" id="password" name="password" required><br>
-          <a id="button_qmk" href="../template/quenmatkhau.html">Quên mật khẩu</a>
-          <span>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;</span>
-          <a id="button_qmk" href="../template/dangky.html"">Đăng ký</button>
-          <span>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-          <button type="submit" id="button_dangnhap">Đ Ă N G&nbsp;&nbsp;&nbsp;N H Ậ P</button>
-        </div>
-      </form>
-    </div>
+        <form id="register-form">
+            <div id="error-message"></div>
+            <div class="input-group">
+                <p id="name-label">Tên<span style="color:red">*</span></label><br>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <p id="surname-label">Họ<span style="color:red">*</span></label><br>
+                <input type="text" id="surname" name="surname" required>
+            </div>
+            <div class="input-group">
+                <p id="email-label">Email<span style="color:red">*</span></label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <p id="password-label">Mật khẩu<span style="color:red">*</span></label><br>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <p id="confirm-password-label">Xác nhận mật khẩu<span style="color:red">*</span></label><br>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div class="input-group">
+                <a class="link" href="../template/quenmatkhau.html">Bạn đã có một tài khoản?</a>
+                <span>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;</span>
+                <a class="link" href="../template/dangky.html">Đăng nhập</a>
+                <span>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <button type="submit" class="submit-button">TẠO</button>
+            </div>
+        </form>
+    </div>    
     <!--Footer-->
     <footer>
       <div class="container footer_container">
