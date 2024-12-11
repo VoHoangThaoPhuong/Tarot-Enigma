@@ -37,7 +37,6 @@
     color:var(--navbar-menu-color);
 }
 
-
 .spaced-words{
     word-spacing: 1vw;
 }
@@ -51,7 +50,6 @@
 }
 #button_dangnhap{
     display:inline-block;
-
     height:10vh;
     width:20vw;
     color:aliceblue;
@@ -65,8 +63,8 @@
 #button_qmk{
     color:var(--navbar-menu-color);
     padding: 0;
-border: none;
-background: none;
+    border: none;
+    background: none;
     font-size:20px;
     text-decoration:none;
 } 

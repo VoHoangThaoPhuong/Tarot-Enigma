@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="../assets/css/header.css" />
     <!--DangNhap-->
     <link rel="stylesheet" href="../assets/css/dangnhap.css" />
+    <!--DangKy-->
+    <link rel="stylesheet" href="../assets/css/dangky.css" />
+    <!--QuenMatKhau-->
+    <link rel="stylesheet" href="../assets/css/quenmatkhau.css" />
     <!--SlideBar-->
     <link rel="stylesheet" href="../assets/css/slidebar.css" />
     <!--Footer-->
@@ -238,27 +242,25 @@
       </div>      
     </header>
 
-    <!--Dang Nhap-->
-    <div class="FormDangNhap">
-      <div class="DangNhap_Header">
-        <h1>Đăng nhập</h1>
-      </div>
-      <form id="login-form">
-        <div id="error-message"></div>
-        <div class="input-group">
-          <p id="email-label">Email<span style="color:red">*</span></label><br>
-          <input type="email" id="email" name="email" required>
+    <!--QuenMatKhau-->
+    <div class="register-form">
+        <div class="register-header">
+            <h1>QUÊN MẬT KHẨU</h1>
         </div>
-        <div class="input-group">
-          <p id="password-label">Mật khẩu<span style="color:red">*</span></label><br>
-          <input type="password" id="password" name="password" required><br>
-          <a id="button_qmk" href="../template/quenmatkhau.html">Quên mật khẩu</a>
-          <span>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;</span>
-          <a id="button_qmk" href="../template/dangky.html"">Đăng ký</button>
-          <span>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-          <button type="submit" id="button_dangnhap">Đ Ă N G&nbsp;&nbsp;&nbsp;N H Ậ P</button>
-        </div>
-      </form>
+        <form id="register-form">
+            <div id="error-message"></div>
+            <div class="input-group">
+                <p id="email-label">Email<span style="color:red">*</span></label><br>
+                <input type="email" id="email" name="email" required></p></br>
+            </div>
+            <div class="input-group">
+                <a class="link forgot-password" href="../template/quenmatkhau.html">Chúng tôi sẽ gửi cho bạn một email để đặt lại mật khẩu của bạn.</a>
+                <div class="action-buttons">
+                    <a class="link cancel" href="../template/dangky.html">Hủy bỏ</a>
+                    <button type="submit" class="submit-button">XÁC NHẬN</button>
+                </div>
+            </div>                          
+        </form>
     </div>
     <!--Footer-->
     <footer>
