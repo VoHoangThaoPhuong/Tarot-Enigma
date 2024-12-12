@@ -2,6 +2,7 @@
   <a href="./LandingPage.html">
     <img src="../assets/images/Giới thiệu/logotarot-01.png" alt="Loianh"/ class="logo">
   </a>
+  
   <div class="header_right">
     <div class="header_right_search">
       <div>
@@ -89,7 +90,7 @@
 </nav>
 
 <div id="loginPopup" class="loginpopup" onclick="closeLoginPopUp(event)">
-  <div class="flip-container">
+  <!-- <div class="flip-container">
     <div class="flipper" id="flipper">
       <div class="front">
         <div class="login-container" id="login-container">
@@ -183,6 +184,27 @@
         </div>
       </div>
     </div>
+  </div> -->
+  <div class="FormDangNhap">
+    <div class="DangNhap_Header">
+      <h1>Đăng nhập</h1>
+    </div>
+    <form id="login-form">
+      <div id="error-message"></div>
+      <div class="input-group">
+        <p id="email-label">Email<span style="color:red">*</span></label><br>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-group">
+        <p id="password-label">Mật khẩu<span style="color:red">*</span></label><br>
+        <input type="password" id="password" name="password" required><br>
+        <a id="button_qmk" href="../template/quenmatkhau.html">Quên mật khẩu</a>
+        <span>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;</span>
+        <a id="button_qmk" href="../template/dangky.html"">Đăng ký</button>
+        <span>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <button type="submit" id="button_dangnhap">Đ Ă N G&nbsp;&nbsp;&nbsp;N H Ậ P</button>
+      </div>
+    </form>
   </div>
 </div>
 
@@ -194,11 +216,11 @@
   </button>
 </div>
 
-<div id="userPopup" class="userPopup" onclick="closeUserPopUp(event)">
+<!-- <div id="userPopup" class="userPopup" onclick="closeUserPopUp(event)">
   <div id="user-popup-container">
     <p><a href="./user-info.html">Thông tin cá nhân</a></p>
     <p>Lịch sử đơn hàng</p>
     <hr />
     <p id="logout" onclick="logout()">Đăng xuất</p>
   </div>
-</div>
+</div> -->

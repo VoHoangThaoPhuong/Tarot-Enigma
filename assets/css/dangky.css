@@ -2,7 +2,8 @@
     position: relative;
     margin-top: 200px;
     margin-left: 10vw;
-    width: 100vw;
+    margin-right: 10vw;
+    width: 80vw;
 }
 
 #name, #surname, #email, #password, #confirm-password {
@@ -33,10 +34,15 @@
 
 .register-header {
     text-align: center;
-    margin-right: 10vw;
     padding-top: 5vh;
     padding-bottom: 5vh;
     color: var(--navbar-menu-color);
+}
+
+.input-group1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .submit-button {
@@ -44,8 +50,9 @@
     height: 10vh;
     width: 20vw;
     color: aliceblue;
-    background-color: black;
+    background-color: var(--origin1-color);
     border: 1px solid;
+    margin: center;
 }
 
 .link-container {

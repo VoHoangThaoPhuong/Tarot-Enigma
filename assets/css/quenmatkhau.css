@@ -2,7 +2,7 @@
     position: relative;
     margin-top: 200px;
     margin-left: 10vw;
-    width: 100vw;
+    width: 80vw;
 }
 
 #name, #surname, #email, #password, #confirm-password {
@@ -27,25 +27,19 @@
     color: var(--navbar-menu-color);
 }
 
+.input-group {
+    display: block;  /* Giữ phần tử cha là block để liên kết "Chúng tôi sẽ gửi..." đứng riêng biệt */
+}
+
 .spaced-words {
     word-spacing: 1vw;
 }
 
 .register-header {
     text-align: center;
-    margin-right: 10vw;
     padding-top: 5vh;
     padding-bottom: 5vh;
     color: var(--navbar-menu-color);
-}
-
-.submit-button {
-    display: inline-block;
-    height: 10vh;
-    width: 20vw;
-    color: aliceblue;
-    background-color: black;
-    border: 1px solid;
 }
 
 .link-container {
@@ -61,23 +55,35 @@
     text-decoration: none;
 }
 
-
-.input-group {
-    display: block;  /* Giữ phần tử cha là block để liên kết "Chúng tôi sẽ gửi..." đứng riêng biệt */
-}
-
 .forgot-password {
     display: block;  /* Đảm bảo liên kết "Chúng tôi sẽ gửi..." ở trên một dòng riêng */
     margin-bottom: 10px;  /* Tạo khoảng cách dưới liên kết này */
 }
 
 .action-buttons {
-    display: flex;
-    justify-content: flex-start;
-    gap: 10px;
-    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50vw;
+    height: 8vh;
+    margin-top: 20px;
+    margin-left: 50px;
 }
 
 .cancel{
-    margin-left: -500px;
+    display: flex;
+    justify-content: center;
+    margin-right: 180px;
+    margin-left: 140px;
+    align-items: center;
 }
+
+.other_button {
+    display: inline-block;
+    height: 10vh;
+    width: 20vw;
+    color: whitesmoke;
+    border: 1px solid;
+    background-color: var(--origin1-color);
+    margin: center;
+}
+
