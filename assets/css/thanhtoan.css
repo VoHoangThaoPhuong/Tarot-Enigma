@@ -5,6 +5,9 @@
 body {
   background-color: #fff;
 }
+.container{
+  margin-top: 12%;
+}
 .flex-container {
   margin-top: 5vh;
   margin-left: auto;
@@ -26,7 +29,7 @@ body {
   font-weight: 600;
 }
 .left-container h2 {
-  margin-top: 7vh;
+  margin-top: 2vh;
   font-size: 23px;
   font-weight: 540;
 }
@@ -34,7 +37,7 @@ body {
   color: var(--origin1-color);
 }
 #already {
-  margin-top: 7%;
+  margin-top: 4%;
 }
 #name,
 #address {

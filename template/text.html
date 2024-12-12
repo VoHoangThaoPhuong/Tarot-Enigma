@@ -8,27 +8,20 @@
     form {
       text-align: center;
     }
-
     #imgFile {
       width: 100vw;
       height: 200px;
       border-radius: 50%; /* Create a circular image frame */
       border: 2px solid #ccc; /* Add a border for visual appeal */
-      
     }
-
-    
-
     label {
       cursor: pointer;
     }
   </style>
 </head>
 <body>
-
 <form action="">
   <label for="imageFile">
-    
     Chọn ảnh
   </label>
   <input type="file" name="" id="imageFile" onchange="chooseFile(this)" accept="image/gif, image/jpeg, image/png, image/jpg">
@@ -44,7 +37,6 @@
       reader.onload = function (e) {
         imgFile.src = e.target.result;
       };
-
       reader.readAsDataURL(file);
     }
   }
