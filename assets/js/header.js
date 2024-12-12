@@ -1,15 +1,3 @@
-function changeSignUp() {
-  const container = document.getElementById("login-container");
-  container.classList.remove("right-panel-active");
-}
-function changeSignIn() {
-  const container = document.getElementById("login-container");
-  container.classList.add("right-panel-active");
-}
-function showPopup() {
-  var login_popup = document.getElementById("loginPopup");
-  login_popup.style.display = "block";
-}
 // Function to store user information in local storage during signup
 function signup() {
   var usernameInput = document.getElementById("username-signup").value;
@@ -126,21 +114,6 @@ function setupUserDisplay() {
 }
 function sendEmail() {
   alert("Chúng tôi đã gửi mã đổi password đến địa chỉ mail của bạn!");
-}
-function closeLoginPopUp(event) {
-  var loginContainer = document.getElementById("login-container");
-  var forgotContainer = document.getElementById("forgot-container");
-  var loginPopup = document.getElementById("loginPopup");
-
-  // Kiểm tra nếu phần tử được nhấp không thuộc về login-container
-  if (
-    !loginContainer.contains(event.target) &&
-    !forgotContainer.contains(event.target) &&
-    !event.target.classList.contains("ghost")
-  ) {
-    // Đóng popup
-    loginPopup.style.display = "none";
-  }
 }
 function flip() {
   document.querySelector("#flipper").classList.toggle("flip");

@@ -15,7 +15,7 @@
       />
     </div>
     <div class="header_right_icon">
-      <a id="user">
+      <a id="user" href="./dangnhap.html">
         <i class="fa-regular fa-user fa-sm" onclick="showPopup()"></i>
         <p id="username_show"></p>
       </a>
@@ -88,125 +88,6 @@
     </li>
   </ul>
 </nav>
-
-<div id="loginPopup" class="loginpopup" onclick="closeLoginPopUp(event)">
-  <!-- <div class="flip-container">
-    <div class="flipper" id="flipper">
-      <div class="front">
-        <div class="login-container" id="login-container">
-          <div class="form-container sign-up-container">
-            <form action="#">
-              <h1>Tạo tài khoản</h1>
-              <div class="social-container">
-                <a href="#" class="social fb">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="social gg">
-                  <i class="fab fa-google-plus-g"></i>
-                </a>
-                <a href="#" class="social linked">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </div>
-              <span>hoặc bạn có thể đăng ký bằng Email</span>
-              <input
-                type="text"
-                placeholder="Tên đăng nhập"
-                id="username-signup"
-              />
-              <input type="email" placeholder="Email" id="email-signup" />
-              <input
-                type="password"
-                placeholder="Mật khẩu"
-                id="password-signup"
-              />
-              <button onclick="signup()">Đăng ký</button>
-            </form>
-          </div>
-          <div class="form-container sign-in-container">
-            <form action="#">
-              <h1>Đăng nhập</h1>
-              <div class="social-container">
-                <a href="#" class="social fb">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="social gg">
-                  <i class="fab fa-google-plus-g"></i>
-                </a>
-                <a href="#" class="social linked">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </div>
-              <span>hoặc đăng nhập bằng cách sau</span>
-              <input type="text" placeholder="Tên đăng nhập" id="username" />
-              <input type="password" placeholder="Mật khẩu" id="password" />
-              <div onclick="flip()" style="margin-bottom: 10px" id="flip-btn">
-                Quên mật khẩu !?
-              </div>
-              <button onclick="signin()">Đăng nhập</button>
-            </form>
-          </div>
-          <div class="overlay-container">
-            <div class="overlay">
-              <div class="overlay-panel overlay-left">
-                <h1 class="highlight">Chào bạn mới!</h1>
-                <p class="highlight">
-                  Hãy đăng ký để trải nghiệm dịch vụ một cách tốt nhất
-                </p>
-                <button class="ghost" id="signIn" onclick="changeSignUp()">
-                  Đăng nhập
-                </button>
-              </div>
-              <div class="overlay-panel overlay-right">
-                <h1 class="highlight">Chào bạn!</h1>
-                <p class="highlight">
-                  Đăng nhập để cùng trải nghiệm những dịch vụ tuyệt vời nhất
-                </p>
-                <button class="ghost" id="signUp" onclick="changeSignIn()">
-                  Đăng ký
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="back">
-        <div class="login-container" id="forgot-container">
-          <form action="#" id="forgot-form">
-            <h1>Vui lòng nhập Email của bạn:</h1>
-            <input type="email" placeholder="Email" />
-            <div onclick="flip()" style="margin-bottom: 10px" id="flip-btn">
-              <i class="fa-solid fa-arrow-left"></i>
-              Quay về đăng nhập
-            </div>
-            <button onclick="sendEmail()">Gửi</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <div class="FormDangNhap">
-    <div class="DangNhap_Header">
-      <h1>Đăng nhập</h1>
-    </div>
-    <form id="login-form">
-      <div id="error-message"></div>
-      <div class="input-group">
-        <p id="email-label">Email<span style="color:red">*</span></label><br>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="input-group">
-        <p id="password-label">Mật khẩu<span style="color:red">*</span></label><br>
-        <input type="password" id="password" name="password" required><br>
-        <a id="button_qmk" href="../template/quenmatkhau.html">Quên mật khẩu</a>
-        <span>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;</span>
-        <a id="button_qmk" href="../template/dangky.html"">Đăng ký</button>
-        <span>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <button type="submit" id="button_dangnhap">Đ Ă N G&nbsp;&nbsp;&nbsp;N H Ậ P</button>
-      </div>
-    </form>
-  </div>
-</div>
 <div id="cart-dropdown" class="cart-dropdown">
   <ul id="cart-items"></ul>
   <div id="cart-total">Total: $0.00</div>

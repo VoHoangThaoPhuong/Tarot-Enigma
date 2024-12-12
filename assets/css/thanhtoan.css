@@ -143,22 +143,13 @@ body {
   width: 45vw;
   margin-top: 2%;
 }
-
-#email {
-  padding-left: 3%;
-  border: var(--origin2-color) 1px solid;
-  border-radius: 3px;
-  box-sizing: border-box;
-  width: 63%;
-  height: 5vh;
-}
 #phone {
   padding-left: 3%;
   height: 5vh;
   border: var(--origin2-color) 1px solid;
   border-radius: 3px;
   box-sizing: border-box;
-  width: 36.3%;
+  width: 49.5%;
 }
 
 #selector-container {
