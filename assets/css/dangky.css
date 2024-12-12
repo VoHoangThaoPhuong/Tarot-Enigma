@@ -39,26 +39,6 @@
     color: var(--navbar-menu-color);
 }
 
-.input-group1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.submit-button {
-    display: inline-block;
-    height: 10vh;
-    width: 20vw;
-    color: aliceblue;
-    background-color: var(--origin1-color);
-    border: 1px solid;
-    margin: center;
-}
-
-.link-container {
-    margin-bottom: 10vh;
-}
-
 .link {
     color: var(--navbar-menu-color);
     padding: 0;
@@ -67,3 +47,26 @@
     font-size: 20px;
     text-decoration: none;
 }
+
+.input-group1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button {
+    display: flex;
+    height: 10vh;
+    width: 20vw;
+    color: whitesmoke;
+    background-color: var(--origin1-color);
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.link-container {
+    margin-bottom: 10vh;
+}
+

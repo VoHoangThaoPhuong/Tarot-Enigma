@@ -54,13 +54,16 @@
     text-decoration: none;
 }
 .button_dangnhap{
-    display: inline-block;
+    display: flex;
     height: 10vh;
     width: 20vw;
     color: whitesmoke;
     background-color: var(--origin1-color);
     border: 1px solid ;
+    justify-content: center;
+    align-items: center;
 }
+
 #button_qmk_container{
     margin-bottom: 10vh;
 }
