@@ -72,10 +72,6 @@
 #blue {
   background-color: rgb(0, 72, 0);
 }
-/* .detail p {
-  font-weight: 300;
-  font-size: 1.5vb;
-} */
 .content-body,
 .content-footer {
   margin-top: 10%;
@@ -130,6 +126,7 @@
   list-style-type: "-";
 }
 .filter-content p {
+  font-size: 17px;
   text-indent: 40px;
 }
 #delivery img {

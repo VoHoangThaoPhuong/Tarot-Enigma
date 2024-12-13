@@ -33,7 +33,7 @@
     color: var(--navbar-menu-color);
     font-weight:700;
 }
-
+ 
 .link {
     color: var(--navbar-menu-color);
     padding: 0;
@@ -72,3 +72,4 @@
     margin-bottom: 10vh;
 }
 
+ 

@@ -8,7 +8,7 @@
 .sanpham_category {
   margin-top: 3%;
 }
-.sanpham_category h1 {
+.sanpham_category h1 { 
   color: var(--detail-color);
   font-weight: 600;
 }
