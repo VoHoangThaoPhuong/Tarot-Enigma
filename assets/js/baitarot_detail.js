@@ -14,7 +14,6 @@ function showMoreCards() {
     }
   }
 }
-
 document.addEventListener("DOMContentLoaded", function () {
   const filterButtons = document.querySelectorAll(".filter-bar button");
   const productCards = document.querySelectorAll(".product-card");

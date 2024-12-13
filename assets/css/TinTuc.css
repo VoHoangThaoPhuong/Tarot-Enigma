@@ -16,7 +16,7 @@
   font-weight: 600;
   margin-left: 30px;
   margin-bottom: 25px;
-}
+} 
 .Tintuc hr{
   position: relative;
   top: 4.5vw;
@@ -28,7 +28,7 @@
 .Tintuc .chuabiet{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap:20px;
+  gap:30px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -51,7 +51,7 @@ mautin{
 .Tintuc .ramat {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap:20px;
+  gap:40px;
   margin-left: 20px;
   margin-right: 20px;
 }
