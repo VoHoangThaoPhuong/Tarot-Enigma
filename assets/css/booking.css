@@ -1,28 +1,6 @@
-.thietke_header {
-  padding-top: 10%;
-}
-
 p {
   font-size: 18px;
 }
-.thietke_header .header {
-  text-align: center;
-  color: white;
-  background-image: url("../images/thietkethicong/header.jpeg");
-  padding: 10%;
-  background-position: bottom;
-  background-size: cover;
-  text-shadow: 0px 0px 5px rgb(120, 120, 120);
-  height: 10vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.hiden_text {
-  display: none;
-}
-
 .sign {
   display: flex;
   margin-top: 1%;
@@ -65,7 +43,7 @@ p {
 }
 .sign-button {
   margin-top: 20px;
-}
+} 
 .sign-button button{
   display: block;
   padding: 10px;
@@ -77,5 +55,6 @@ p {
   height: auto;
 }
 .sign-button .other_button {
-  background-color: var(--origin3-color);
+  background-color: var(--origin1-color);
+  color: white;
 }

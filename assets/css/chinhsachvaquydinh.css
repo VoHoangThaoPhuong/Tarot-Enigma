@@ -1,5 +1,5 @@
 .chinhsach_header {
-  padding-top: 10%;
+  padding-top: 9%;
 }
 .chinhsach_header h1 {
   position: relative;
@@ -10,13 +10,11 @@
   position: relative;
   top: 4.5vw;
   left: -2vw;
-  width: 20%;
-  color:D4BEE4;
+  color:var(--origin2-color);
 }
 .chinhsach_header .content {
   width: 100vw;
   padding: 5%;
-  background-color: #D4BEE4;
 }
 .chinhsach_header .content ol li {
   font-weight: 600;
@@ -41,8 +39,8 @@
 .chinhsach_header .content table {
   text-align: center;
   margin: auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 .chinhsach_header .content p {
   font-size: 17px;

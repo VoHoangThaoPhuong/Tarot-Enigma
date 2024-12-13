@@ -20,18 +20,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <!--Favicon-->
+    <link rel="icon" href="../assets/images/Giới thiệu/favicon-01.png" type="image/png">
   </head>
 
   <body>
     <div class="loading"></div>
     <div class="offline-message" id="offline-message"></div>
     <div class="content-show">
-      <!--Header-->
       <header></header>
-
-      <!--Liên hệ Content-->
       <div class="lienhe_header container">
-        <hr size="30px" color="yellow" />
+        <hr size="30px">
         <h1>Liên hệ</h1>
         <div class="flex">
           <div class="content">
@@ -40,9 +39,9 @@
               <form>
                 <table>
                   <tr>
-                    <td><input type="text" placeholder="Tên:" /></td>
+                    <td><input type="text" placeholder="Tên"></td>
                     <td class="ten_email">
-                      <input type="email" placeholder="Email:" />
+                      <input type="email" placeholder="Email">
                     </td>
                   </tr>
                   <tr>
@@ -52,12 +51,12 @@
                         id=""
                         cols="110"
                         rows="10"
-                        placeholder="Tin nhắn:"
+                        placeholder="Tin nhắn"
                       ></textarea>
                     </td>
                   </tr>
                 </table>
-                <button>Gửi</button>
+                <button id="success">GỬI LỜI NHẮN</button>
               </form>
             </div>
             <div class="content_2">
@@ -72,20 +71,22 @@
               </p>
               <h2>Trang xã hội</h2>
               <div class="footer_icon">
-                <a href="https://www.facebook.com/UIT.Fanpage"
-                  ><i class="fa-brands fa-facebook fa-2xl"></i></a
-                ><a href="https://www.instagram.com/truongdhcongnghethongtin/"
-                  ><i class="fa-brands fa-instagram fa-2xl"></i
-                ></a>
-                <a href="https://www.pinterest.com/search/pins/?q=tarot&rs=typed"
-                  ><i class="fa-brands fa-pinterest fa-2xl"></i
-                ></a>
-                <a href="https://www.youtube.com/@uitchannel"
-                  ><i class="fa-brands fa-youtube fa-2xl"></i
-                ></a>
+                <a href="https://www.facebook.com/UIT.Fanpage">
+                  <i class="fa-brands fa-facebook fa-2xl"></i>
+                </a>
+                <a href="https://www.instagram.com/truongdhcongnghethongtin/">
+                  <i class="fa-brands fa-instagram fa-2xl"></i>
+                </a>
+                <a href="https://www.pinterest.com/search/pins/?q=tarot&rs=typed">
+                  <i class="fa-brands fa-pinterest fa-2xl"></i>
+                </a>
+                <a href="https://www.youtube.com/@uitchannel">
+                  <i class="fa-brands fa-youtube fa-2xl"></i>
+                </a>
               </div>
               <h2>Giờ làm việc</h2>
               <ul>
+                <li><b>Văn phòng:</b> Thứ 2 – Thứ 7; 9:00 – 18:00</li>
                 <li><b>Cửa hàng:</b> Thứ 2 - Chủ nhật; 9:00 - 21:00</li>
               </ul>
             </div>
@@ -104,5 +105,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../assets/js/header&footer.js"></script>
     <script src="../assets/js/slideshow.js"></script>
+    <script src="../assets/js/lienhe.js"></script>
   </body>
 </html>

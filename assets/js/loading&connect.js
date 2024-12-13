@@ -13,31 +13,27 @@ function loadCSS(url) {
   link.href = url;
   document.head.appendChild(link);
 }
+
 loadHTML("./loading.html", "div.loading");
 loadHTML("./connect.html", "div.offline-message");
 loadCSS("../assets/css/loading&connect.css");
 
 window.addEventListener("load", function () {
   checkOnlineStatus();
-
-  // Kiểm tra trạng thái kết nối mạng mỗi 2 giây
   setInterval(checkOnlineStatus, 2000);
-
-  // Tắt loading page sau khi trang web đã được tải hoàn toàn
   document.querySelector(".loading").style.display = "none";
-  document.querySelector(".content-show").style.display = "block"; // Hiển thị nội dung trang web
+  document.querySelector(".content-show").style.display = "block";
 });
 
 function checkOnlineStatus() {
   const offlineMessage = document.querySelector("#offline-message");
   const content = document.querySelector(".content-show");
-
   if (navigator.onLine) {
     offlineMessage.classList.remove("show");
-    content.style.display = "block"; // Hiển thị nội dung trang web
+    content.style.display = "block"; 
   } else {
     offlineMessage.classList.add("show");
-    content.style.display = "none"; // Ẩn nội dung trang web
+    content.style.display = "none"; 
   }
 }
 

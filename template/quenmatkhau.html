@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tarot Enigma</title>
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/header.css" />
-    <link rel="stylesheet" href="../assets/css/slidebar.css" />
-    <link rel="stylesheet" href="../assets/css/footer.css" />
-    <link rel="stylesheet" href="../assets/css/quenmatkhau.css" />
+    <link rel="stylesheet" href="../assets/css/dangkydangnhap.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,29 +16,33 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <!--Favicon-->
+    <link rel="icon" href="../assets/images/Giới thiệu/favicon-01.png" type="image/png">
   </head>
 
   <body>
     <header></header>
     <div class="register-form">
       <div class="register-header">
-          <h1>QUÊN MẬT KHẨU</h1>
+        <h1>QUÊN MẬT KHẨU</h1>
       </div>
       <form id="register-form">
-        <div id="error-message"></div>
         <div class="input-group">
-          <p id="email-label">Email<span style="color:red">*</span></label><br>
-          <input type="email" id="email" name="email" required></p></br>
+          <p id="email-label">Nhập Email để chúng tôi gửi mail đến bạn xác nhận mật khẩu<span style="color:red">*</span></label><br>
+          <input type="email" id="email" name="email" required>
         </div>
         <div class="input-group">
-          <a class="link forgot-password" href="../template/quenmatkhau.html">Chúng tôi gửi cho bạn email đặt lại mật khẩu.</a>
-          <div class="action-buttons">
-            <a class="link cancel" href="../template/dangnhap.html">Hủy bỏ</a>
-            <button class="other_button">X Á C&nbsp;&nbsp;&nbsp;N H Ậ N</button>
+          <div class="input-group1">
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <a class="link submit-button2" href="../template/dangnhap.html">HỦY BỎ</a>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
           </div>
-        </div>                          
+          <button type="submit" id="submit-button">
+            <a class="link submit-button" id="sendmail">XÁC NHẬN GỬI MAIL</a>
+          </button>
+        </div>
       </form>
-    </div>
+    </div> 
     <footer></footer>
     <script src="../assets/js/loading&connect.js"></script>
     <script
@@ -52,5 +53,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../assets/js/header&footer.js"></script>
     <script src="../assets/js/slideshow.js"></script>
+    <script src="../assets/js/quenmatkhau.js"></script>
   </body>
 </html>

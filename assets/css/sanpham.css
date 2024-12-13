@@ -181,7 +181,6 @@
   top: 0;
   opacity: 0;
 }
-
 .product-image:hover .original-image {
   opacity: 0;
 }

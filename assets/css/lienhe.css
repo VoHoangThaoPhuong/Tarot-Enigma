@@ -1,5 +1,5 @@
 .lienhe_header {
-  padding-top: 10%;
+  padding-top: 9%;
 }
 .lienhe_header h1 {
   position: relative;
@@ -18,13 +18,12 @@
   padding: 5%;
   display: flex;
   justify-content: space-between;
-  background-color: #D4BEE4;
-}
+}  
 .lienhe_header .content_1 {
   padding-right: 8%;
 }
 .lienhe_header .content_1 td {
-  padding-top: 5%;
+  padding-top: 3%;
 }
 .lienhe_header .content_1 .ten_email {
   padding-left: 5%;
@@ -39,18 +38,22 @@
   width: 100%;
 }
 .lienhe_header .content_1 button {
-  width: 8vw;
-  height: 5vh;
+  width: 250px;
   margin-top: 3%;
   font-size: 20px;
-  background-color: black;
+  background-color: var(--origin1-color);
   color: white;
+  padding: 10px;
 }
 .lienhe_header .content_1 button:hover {
   background-color: #D4BEE4;
+  color: black;
 }
 .lienhe_header .content h2 {
   font-size: 30px;
+}
+.lienhe_header .content_2 p {
+  line-height: 2;
 }
 .lienhe_header .content_2 .footer_icon {
   margin: 5% 0 5%;
@@ -60,5 +63,5 @@
   color: black;
 }
 .lienhe_header .content_2 .footer_icon a:hover {
-  color: orange;
+  color: var(--origin1-color);
 }

@@ -1,6 +1,6 @@
 .register-form {
     position: relative;
-    margin-top: 200px;
+    margin-top: 180px;
     margin-left: 10vw;
     margin-right: 10vw;
     width: 80vw;
@@ -23,20 +23,15 @@
     margin-left: 15vw;
 }
 
-#error-message {
-    font-size: 25px;
-    color: var(--navbar-menu-color);
-}
-
 .spaced-words {
     word-spacing: 1vw;
 }
 
 .register-header {
     text-align: center;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-bottom: 2vh;
     color: var(--navbar-menu-color);
+    font-weight:700;
 }
 
 .link {
@@ -60,11 +55,18 @@
     width: 20vw;
     color: whitesmoke;
     background-color: var(--origin1-color);
-    border: 1px solid;
     justify-content: center;
     align-items: center;
 }
 
+.submit-button1 {
+    display: flex;
+    height: 10vh;
+    width: 20vw;
+    color: var(--origin1-color);
+    justify-content: center;
+    align-items: center;
+}
 
 .link-container {
     margin-bottom: 10vh;

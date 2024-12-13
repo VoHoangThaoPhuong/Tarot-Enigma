@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Make My Home</title>
+    <title>Tarot Enigma</title>
     <!--General-->
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <!--Ghe_detail-->
+    <!--Tarot_detail-->
     <link rel="stylesheet" href="../assets/css/baitarot_detail.css" />
     <!--Sản phẩm-->
     <link rel="stylesheet" href="../assets/css/sanpham.css" />
@@ -22,6 +22,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <!--Favicon-->
+    <link rel="icon" href="../assets/images/Giới thiệu/favicon-01.png" type="image/png">
   </head>
 
   <body>
@@ -31,9 +33,9 @@
       <!--Header-->
       <header></header>
 
-      <!--Ghế detail Content-->
-      <div class="ghe_detail container">
-        <p><i>Trang chủ / GHẾ - CHAIRS / VAHI</i></p>
+      <!--Bài Tarot detail Content-->
+      <div class="tarot_detail container">
+        <p><i>Trang chủ / Bài Tarot / Waite Smith</i></p>
         <div class="product container">
           <div class="show">
             <div class="image-slideshow">
@@ -103,7 +105,7 @@
                 <p><b>ISBN:</b>9780913866139</p>
               </div>
             </div>
-            <button class="detail-btn" onclick="addToProductCart()">
+            <button class="detail-btn" onclick="addItem(event)">
               Thêm vào giỏ hàng
             </button>
           </div>
@@ -141,19 +143,19 @@
       </div>
       <div id="warranty" class="filter-content container">
         <b>Cách bảo quản và sử dụng đúng cách:</b>
-        <b>Bảo quản bộ bài:</b>
+        <b>Bảo quản bộ bài</b>
         <p>Những lá bài Tarot trong quá trình sử dụng có thể tiếp nhận những năng lượng tiêu cực,
         mà năng lượng này có thể gây ảnh hưởng đến việc đọc bài của bạn. Bạn nên cất giữ bộ bài
         trong một túi đen có lớp lót hay trong một hộp gỗ. Bạn có thể bỏ thêm vào túi hoặc hộp
         gỗ những viên đá quý hay các loại thảo mộc để giúp cho năng lượng của bộ bài tinh khiết
         và tích cực hơn.</p>
-        <b>Quyết định người nào có thể chạm vào bộ bài:</b> 
+        <b>Quyết định người nào có thể chạm vào bộ bài</b> 
         <p>Đây là một vấn đề về sở thích cá nhân, bạn có cho phép người hỏi chạm vào những lá bài 
         hay không. Một số readers khuyến khích việc này – cho phép người hỏi xào bài như là một 
         cách truyền năng lượng vào những lá bài để tạo kết nối tốt hơn. Nhưng một số khác thì lại 
         không thích năng lượng của bất cứ ai ngoại trừ họ tiếp xúc với bộ bài để giữ cho năng 
         lượng được tinh khiết, nhất quán.</p> 
-        <b>Thanh tẩy bộ bài:</b>
+        <b>Thanh tẩy bộ bài</b>
         <p>Sẽ có lúc bạn cần thanh tẩy hay là làm sạch bộ bài của bạn để loại trừ những năng lượng 
         tiêu cực. Có nhiều cách để thanh tẩy, nhưng một cách đơn giản đó là sử dụng cách có liên 
         quan đến bốn nguyên tố. Khi sử dụng cách này, ta bắt đầu với việc trải bộ bài theo hình 
@@ -182,12 +184,7 @@
       <!--Có Thể Bạn Cũng Thích-->
       <div class="product_slide container">
         <h1>Có thể bạn cũng thích</h1>
-        <div
-          id="relativeProduct"
-          class="carousel slide"
-          data-bs-touch="false"
-          data-bs-interval="false"
-        >
+        <div id="relativeProduct" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="product_slide-container flex">
@@ -336,7 +333,6 @@
           </button>
         </div>
       </div>
-      <footer></footer>
     </div>
       <!--Footer-->
       <footer></footer>
@@ -350,6 +346,5 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../assets/js/sanpham_detail.js"></script>
     <script src="../assets/js/header&footer.js"></script>
-    <script src="../assets/js/slideshow.js"></script>
   </body>
 </html>

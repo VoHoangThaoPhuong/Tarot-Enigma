@@ -1,7 +1,7 @@
-.sanpham_ghe {
+.sanpham_tarot {
   margin-top: 12%;
 }
-.sanpham_ghe p {
+.sanpham_tarot p {
   color: var(--detail-color);
 }
 .banner img {
@@ -19,7 +19,7 @@
   cursor: pointer;
 }
 
-/* CSS cho filter bar */
+/*filter bar */
 .filter-bar {
   text-align: center;
   display: flex;
@@ -54,13 +54,6 @@
   position: relative;
   left: 3%;
 }
-/* CSS cho thông báo không tìm thấy kết quả */
-.no-results {
-  display: none;
-  font-size: 15px;
-  position: relative;
-  left: 25vw;
-}
 .product-card {
   margin: 5% 0;
 }
@@ -71,9 +64,6 @@
   font-weight: 600;
   color: var(--detail-color);
   margin: 3% 0;
-}
-.no-results span {
-  font-size: 15px;
 }
 
 @keyframes fadeIn {
