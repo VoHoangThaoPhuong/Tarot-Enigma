@@ -23,7 +23,7 @@ function updateQuantity(index, delta) {
     // Cập nhật cartCount dựa trên sự thay đổi của số lượng
     cartCount += cartItems[index].quantity - previousQuantity;
   }
-
+ 
   updateCartSession();
   updateLocalStorage();
 }
