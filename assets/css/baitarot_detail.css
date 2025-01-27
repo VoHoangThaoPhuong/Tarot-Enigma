@@ -134,7 +134,7 @@
   position: relative;
   left: 25%;
 }
-.review {
+.review { 
   display: grid;
   grid-template-columns: 1fr 19fr;
   gap: 10px;
